@@ -1,1 +1,79 @@
-<div id="app"></div>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Design form</title>
+    <script>
+          h1,
+      h2 {
+        font-family: Lato;
+      }
+      h4 {
+        text-align: center;
+      }
+      form {
+        text-align: center;
+        border: 4px solid orange;
+        margin: 100px;
+      }
+      input {
+        width: 300px;
+      }
+      button {
+        width: 120px;
+        background-color: orange;
+        border: none;
+        color: black;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .seprate {
+        bdisplay: inline-block;
+      }
+      .label_time {
+        padding-left: 10px;
+      }
+    </script>
+  </head>
+  <body>
+    <form action="#" onsubmit="ongetcall(event)">
+      <fieldset>
+        <h4>Book a call</h4>
+        <p>
+          Book a call slot and our representative will call you within 1hr of
+          selected time.
+        </p>
+        <hr />
+        <br />
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required /><br /><br />
+        <label for="telp">Phone:</label>
+        <input type="tel" id="telp" name="telp" required /><br /><br />
+        <label for="date" class="label_time">Date for call:</label>
+        <input
+          type="date"
+          style="width: 100px"
+          class="seprate"
+          name="date"
+          required
+        />
+        <label for="time" class="label_time"> Time for call:</label>
+        <input
+          type="time"
+          style="width: 100px"
+          class="seprate"
+          name="time"
+          required
+        /><br /><br />
+
+        <button>GET A CALL</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
